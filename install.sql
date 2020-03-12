@@ -67,9 +67,4 @@ CREATE TABLE IF NOT EXISTS `PREFIX_product_comment_report` (
 
 INSERT IGNORE INTO `PREFIX_product_comment_criterion` VALUES ('1', '1', '1');
 
-INSERT IGNORE INTO `PREFIX_product_comment_criterion_lang` (`id_product_comment_criterion`, `id_lang`, `name`)
-  (
-    SELECT '1', l.`id_lang`, 'Quality'
-    FROM `PREFIX_lang` l
-  );
 
